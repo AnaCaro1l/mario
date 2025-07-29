@@ -32,6 +32,8 @@ const loop = setInterval(() => {
         gameOver.style.display = 'flex'
 
         clearInterval(loop);
+
+        document.addEventListener('keydown', () => location.reload(), { once: true });
     }
 
     if (pipePosition <= 0) {
